@@ -1,0 +1,14 @@
+.landing {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.landing .title {
+  font-size: 55px;
+}
+
+.buttonText {
+  margin-right: 20px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}

@@ -1,9 +1,11 @@
-import React from "react";
+//import { useRouter } from "next/router";
 
 function BlogPost() {
+  const router = useRouter();
+
   return (
     <div>
-      <h1>This is the blog post</h1>
+      <h1>This is the blog post with ID : {router.query.blogId}</h1>
     </div>
   );
 }

@@ -1,9 +1,23 @@
-import React from "react";
+import classes from "./Landing.module.css";
+import Button from "../../ui/Button/Button";
+import RightArrow from "../../icons/right-arrow";
 
 function Landing() {
   return (
-    <div>
-      <h1>This is the landing page</h1>
+    <div className={classes.landing}>
+      <div className="container">
+        <h1 className={classes.title}>
+          <span className="primary-one text-gradient">
+            Make your daily experience
+          </span>
+          <br />
+          entertaining and augmented.
+        </h1>
+        <Button>
+          <span className={classes.buttonText}>Schedule Appointment</span>
+          <RightArrow />
+        </Button>
+      </div>
     </div>
   );
 }

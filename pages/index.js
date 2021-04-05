@@ -1,7 +1,12 @@
+// import ToggleTheme from "../components/ui/toggle-theme";
+import Header from "../components/home/header/Header";
+import Landing from "../components/home/landing/Landing";
+
 export default function Home() {
   return (
-    <div>
-      <h1>This is the home page</h1>
-    </div>
+    <>
+      <Header />
+      <Landing />
+    </>
   );
 }
