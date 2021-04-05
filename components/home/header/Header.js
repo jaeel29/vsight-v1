@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 import classes from "./Header.module.css";
 import CustomLink from "../../ui/custom-link";
@@ -6,6 +7,21 @@ import MoonIcon from "../../icons/moon-icon";
 const links = ["About", "Services", "Founders", "Contact"];
 
 function Header() {
+  const [scroll, setScroll] = useState(false);
+
+  //! IMPORTANT
+  if (process.browser) {
+    const fixHeaderAtTop = () => {
+      if (window.scrollY > 90) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", fixHeaderAtTop);
+  }
+
   return (
     <header className={classes.header}>
       <div className="container">
