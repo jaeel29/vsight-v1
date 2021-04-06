@@ -12,7 +12,7 @@ function Header() {
   //! IMPORTANT
   if (process.browser) {
     const fixHeaderAtTop = () => {
-      if (window.scrollY > 90) {
+      if (window.scrollY > 120) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -23,7 +23,11 @@ function Header() {
   }
 
   return (
-    <header className={classes.header}>
+    <header
+      className={
+        scroll ? ` ${classes.fixed} flex-row` : `${classes.header} flex-row`
+      }
+    >
       <div className="container">
         <div className="flex-row">
           <div className={classes.logo}>

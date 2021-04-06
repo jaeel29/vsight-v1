@@ -1,39 +1,51 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 15px;
+  transition: all 0.4s linear;
 }
 
-.header .logo {
+.fixed {
+  z-index: 100;
+  position: fixed;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  max-height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: all 0.4s linear;
+}
+
+.logo {
   width: 50px;
 }
 
-.header .logo img {
+.logo img {
   width: 100%;
   object-fit: contain;
 }
 
-.header .navbar {
+.navbar {
   min-width: 350px;
   max-width: 450px;
 }
 
-.header .navbar ul {
+.navbar ul {
   width: 100%;
 }
 
-.header .navbar ul li a {
+.navbar ul li a {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s linear;
 }
 
-.header .navbar ul li a:hover {
+.navbar ul li a:hover {
   color: var(--primary-one);
 }
 
-.header .themes {
+.themes {
   color: var(--primary-one);
 }
