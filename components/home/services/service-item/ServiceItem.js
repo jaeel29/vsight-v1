@@ -3,7 +3,7 @@ import classes from "./ServiceItem.module.css";
 
 function ServiceItem({ title, Icon }) {
   return (
-    <Link href={`/services/${title}`}>
+    <Link href={`/services/${title.toLowerCase()}`}>
       <a className={classes.service}>
         <div className={`${classes.item} flex-row`}>
           <div className={classes.icon}>

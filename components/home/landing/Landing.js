@@ -1,3 +1,4 @@
+import { landingData } from "../../../data/vsight-data";
 import classes from "./Landing.module.css";
 import Button from "../../ui/Button/Button";
 import RightArrow from "../../icons/right-arrow";
@@ -9,13 +10,13 @@ function Landing() {
       <div className="container">
         <h1 className={classes.title}>
           <span className="primary-one text-gradient">
-            Make your daily experience
+            {landingData.titlePrimary}
           </span>
           <br />
-          entertaining and augmented.
+          {landingData.titleSimple}
         </h1>
         <Button style={classes.btn}>
-          <span className={classes.buttonText}>Schedule Appointment</span>
+          <span className={classes.buttonText}>{landingData.button}</span>
           <RightArrow />
         </Button>
         <div className={classes.illustration}>

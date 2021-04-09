@@ -1,10 +1,9 @@
+import { links } from "../../../data/vsight-data";
 import { useState } from "react";
 import Image from "next/image";
 import classes from "./Header.module.css";
 import CustomLink from "../../ui/custom-link/custom-link";
 import MoonIcon from "../../icons/moon-icon";
-
-const links = ["About", "Services", "Founders", "Contact"];
 
 function Header() {
   const [scroll, setScroll] = useState(false);

@@ -1,3 +1,4 @@
+import { aboutData } from "../../../data/vsight-data";
 import SectionLabel from "../../ui/section-label/section-label";
 import AboutIllustration from "../../icons/about-ilustration";
 import RightArrow from "../../icons/right-arrow";
@@ -13,18 +14,13 @@ function About() {
             <AboutIllustration />
           </div>
           <div className={classes.info}>
-            <SectionLabel color="section-label-two">About us</SectionLabel>
-            <h3 className="section-title">What we do</h3>
-            <p className="paragraph">
-              Vsight is one of the first Moroccan startup that provides XR(*)
-              solutions, we developpe maintenance, education, e-commerce,
-              advertisement and more solutions. Our mission is to understand and
-              remedy our client’s need by providing him the best solution that
-              fits the client's demand. We developpe cross platform and
-              user-friendly solutions which enable you to target a wider market.
-            </p>
+            <SectionLabel color="section-label-two">
+              {aboutData.label}
+            </SectionLabel>
+            <h3 className="section-title">{aboutData.title}</h3>
+            <p className="paragraph">{aboutData.content}</p>
             <Button style={classes.btn}>
-              <span className={classes.buttonText}>Read more</span>
+              <span className={classes.buttonText}>{aboutData.button}</span>
               <RightArrow />
             </Button>
           </div>

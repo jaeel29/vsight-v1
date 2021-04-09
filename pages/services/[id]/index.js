@@ -1,15 +1,16 @@
 import { useRouter } from "next/router";
-import Industrial from "../../../components/icons/industrial-icon";
+import { servicesPage } from "../../../data/vsight-data";
 
 function ServicePage() {
   const router = useRouter();
 
-  const Id = router.query.id;
+  const service = servicesPage[router.query.id];
 
   return (
     <div>
-      {Id === "Industrial" && <Industrial />}
-      <h1>This is the service {Id}</h1>
+      <service.Icon />
+      <h1>{service.title}</h1>
+      <p>{service.content}</p>
     </div>
   );
 }
