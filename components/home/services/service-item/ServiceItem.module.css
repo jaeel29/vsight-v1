@@ -1,0 +1,24 @@
+.service {
+  width: 33%;
+}
+
+.item {
+  width: 65%;
+  margin: 1.2rem auto;
+}
+
+.item span {
+  flex: 1;
+  color: #5a5a5a;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f29bfa1f;
+}

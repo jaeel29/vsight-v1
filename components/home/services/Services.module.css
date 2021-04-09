@@ -1,0 +1,18 @@
+.services {
+  margin-top: 7rem;
+}
+
+.list {
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.btn {
+  background: var(--gradient-bg-one);
+  margin: 3rem auto 0;
+  font-size: 15px;
+}
+
+.btn::after {
+  background: var(--gradient-bg-one);
+}

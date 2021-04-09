@@ -7,12 +7,16 @@
   font-size: 55px;
 }
 
-.buttonText {
-  margin-right: 20px;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-}
-
 .illustration {
   margin-top: 6em;
+}
+
+.btn {
+  background: var(--gradient-bg-one);
+  margin: 3rem auto;
+  font-size: 20px;
+}
+
+.btn::after {
+  background: var(--gradient-bg-one);
 }

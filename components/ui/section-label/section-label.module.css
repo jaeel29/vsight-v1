@@ -1,0 +1,12 @@
+.label {
+  width: max-content;
+  padding: 7px 15px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: grid;
+  place-items: center;
+  /* background-color: var(--primary-one); */
+  /* color: #fff; */
+}

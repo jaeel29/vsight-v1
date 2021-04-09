@@ -3,17 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(180deg, #a267d6 0.02%, #fda3ff 234.31%);
+  padding: 14px 29px;
   border-radius: 47.7254px;
-  padding: 17.897px 35.7941px;
   outline: none;
   color: #fff;
-  margin: 3em auto;
   border: none;
-  box-shadow: #a267d670 0px 10px 20px, #fda3ff6c 0px 6px 6px;
   cursor: pointer;
 }
-.button:before {
+
+.button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -24,5 +22,8 @@
   margin: -1.5px;
   opacity: 0.5;
   border-radius: inherit;
-  background: linear-gradient(to right, #a267d6, #fda3ff);
+}
+
+.button span {
+  margin-right: 1rem;
 }

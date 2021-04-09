@@ -14,7 +14,7 @@ function Landing() {
           <br />
           entertaining and augmented.
         </h1>
-        <Button>
+        <Button style={classes.btn}>
           <span className={classes.buttonText}>Schedule Appointment</span>
           <RightArrow />
         </Button>

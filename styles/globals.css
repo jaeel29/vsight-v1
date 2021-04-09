@@ -1,31 +1,23 @@
 :root {
-  /* default theme */
+  /* Light theme */
   --primary-one: #a267d6;
   --primary-two: #25c1f0;
   --primary-three: #182335;
-  --label: #4e6283;
-  --body: #253551;
-  --placeholder: #91a2bf;
-  --title-active: #182335;
-  --input-background: #eff0f7;
-  --background: #f7f7fc;
-  --line: #d9dbe9;
-  --off-white: #fcfcfc;
+  --primary-bg-one: rgba(162, 103, 214, 0.1);
+  --primary-bg-two: rgba(37, 193, 240, 0.1);
+  --gradient-bg-one: linear-gradient(180deg, #a267d6 0.02%, #fda3ff 234.31%);
+  --gradient-bg-two: linear-gradient(114.44deg, #25c1f0 0%, #9af3ff 100%);
 }
 
 [data-theme="dark"] {
   /* dark theme */
-  --primary-one: #25c1f0;
+  --primary-one: #a267d6;
   --primary-two: #25c1f0;
   --primary-three: #182335;
-  --label: #4e6283;
-  --body: #253551;
-  --placeholder: #91a2bf;
-  --title-active: #182335;
-  --input-background: #4e6283;
-  --background: #f7f7fc;
-  --line: #d9dbe9;
-  --off-white: #fcfcfc;
+  --primary-bg-one: rgba(162, 103, 214, 0.1);
+  --primary-bg-two: rgba(37, 193, 240, 0.1);
+  --gradient-bg-one: linear-gradient(180deg, #a267d6 0.02%, #fda3ff 234.31%);
+  --gradient-bg-two: linear-gradient(114.44deg, #25c1f0 0%, #9af3ff 100%);
 }
 
 /* FONTS */
@@ -50,17 +42,30 @@
 
 /* GLOBAL STYLES */
 
-html,
 body {
-  padding: 0;
   font-family: "KonnectRegular", sans-serif;
-  height: 2000px;
+  height: 3000px;
+}
+
+p,
+span {
+  font-family: "KonnectRegular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "KonnectBold", sans-serif;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+  padding: 0;
   margin: 0;
   user-select: none;
 }
@@ -81,7 +86,8 @@ li {
 }
 
 .container {
-  width: 80%;
+  width: 75rem;
+  max-width: 75rem;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -93,8 +99,25 @@ li {
   justify-content: space-between;
 }
 
-.primary-one {
+.section-label-one {
   color: var(--primary-one);
+  background-color: var(--primary-bg-one);
+}
+
+.section-label-two {
+  color: var(--primary-two);
+  background-color: var(--primary-bg-two);
+}
+
+.section-title {
+  font-size: 50px;
+  color: var(--primary-three);
+}
+
+.paragraph {
+  color: rgba(24, 35, 53, 0.6);
+  font-size: 18px;
+  /* line-height: 24px; */
 }
 
 .text-gradient {
