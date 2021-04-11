@@ -1,8 +1,11 @@
 // Nedeed Icons
 import IndustrialIcon from "../components/icons/industrial-icon";
+import EmailIcon from "../components/icons/email-icon";
+import PhoneIcon from "../components/icons/phone-icon";
+import AddressIcon from "../components/icons/address-icon";
 
 // Links (Header / Fouter / Menu)
-export const links = ["About", "Services", "Founders", "Contact"];
+export const links = ["Home", "About", "Services", "Founders", "Contact"];
 
 // Landing Page Data
 export const landingData = {
@@ -32,54 +35,8 @@ export const servicesSection = {
 export const servicesPage = {
   industrial: {
     title: "Industrial",
-    content:
-      "INDUSTRIAL dolor sit amet consectetur, adipisicing elit. A quo qui quia! Excepturi repellendus cupiditate quasi in quidem rem assumenda perferendis, eum deserunt consequatur labore quisquam amet aliquid unde mollitia.",
-    Icon: IndustrialIcon,
+    icon: <IndustrialIcon />,
   },
-  education: {
-    title: "Education",
-    content:
-      "INDUSTRIAL dolor sit amet consectetur, adipisicing elit. A quo qui quia! Excepturi repellendus cupiditate quasi in quidem rem assumenda perferendis, eum deserunt consequatur labore quisquam amet aliquid unde mollitia.",
-    Icon: IndustrialIcon,
-  },
-  "e-commerce": {
-    title: "E-commerce",
-    content:
-      "INDUSTRIAL dolor sit amet consectetur, adipisicing elit. A quo qui quia! Excepturi repellendus cupiditate quasi in quidem rem assumenda perferendis, eum deserunt consequatur labore quisquam amet aliquid unde mollitia.",
-    Icon: IndustrialIcon,
-  },
-  advertisement: {
-    title: "Advertisement",
-    content:
-      "INDUSTRIAL dolor sit amet consectetur, adipisicing elit. A quo qui quia! Excepturi repellendus cupiditate quasi in quidem rem assumenda perferendis, eum deserunt consequatur labore quisquam amet aliquid unde mollitia.",
-    Icon: IndustrialIcon,
-  },
-  "real-estate": {
-    title: "Real-estate",
-    content:
-      "INDUSTRIAL dolor sit amet consectetur, adipisicing elit. A quo qui quia! Excepturi repellendus cupiditate quasi in quidem rem assumenda perferendis, eum deserunt consequatur labore quisquam amet aliquid unde mollitia.",
-    Icon: IndustrialIcon,
-  },
-  consulting: {
-    title: "Consulting",
-    content:
-      "EDUCATION dolor sit amet consectetur, adipisicing elit. A quo qui quia! Excepturi repellendus cupiditate quasi in quidem rem assumenda perferendis, eum deserunt consequatur labore quisquam amet aliquid unde mollitia.",
-    Icon: IndustrialIcon,
-  },
-};
-
-// By default the Services Page is an Object so we can't map over it
-// We need to create an Array for the existing Object
-// Firstly we declare an empty Array
-const servicesPageArray = [];
-
-// Then we will use The servicesArray function
-export const servicesArray = () => {
-  // This Function use the (for in) Loop over all services object and push each services to the ( servicesPageArray ) and Return it
-  for (const service in servicesPage) {
-    servicesPageArray.push(servicesPage[service]);
-  }
-  return servicesPageArray; // [{...}, {...}] The result of This function
 };
 
 // This is the Founders section Data
@@ -109,3 +66,19 @@ export const founders = [
     linkedinUrl: "",
   },
 ];
+
+// Contact Section (Title - Label - Inputs)
+export const contactSection = {
+  label: " Contact us",
+  title: "Connect with our team",
+};
+
+// Contact Info
+export const contactInfo = {
+  phoneNumber: "+212 679-828-546",
+  phoneIcon: <PhoneIcon />,
+  email: "Bocal@vsight.ma",
+  emailIcon: <EmailIcon />,
+  location: "1337 Lab",
+  locationIcon: <AddressIcon />,
+};

@@ -6,7 +6,7 @@ function Founder({ image, name, job }) {
     <div className={classes.founder}>
       {/* Image */}
       <div className={classes.image}>
-        <Image src={image} alt={name} width={700} height={700} />
+        <Image src={image} alt={name} width={300} height={300} />
       </div>
       {/* Founder info */}
       <div className={classes.info}>

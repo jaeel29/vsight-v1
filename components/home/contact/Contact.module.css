@@ -1,0 +1,18 @@
+.contact {
+  margin-top: 7rem;
+  width: 100%;
+  padding: 9rem 0 4rem;
+  background-image: url("/images/contact-background.png");
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  width: 70%;
+  margin: auto;
+}
+
+.info {
+  margin: 4rem 0;
+}

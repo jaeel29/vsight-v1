@@ -8,10 +8,10 @@ function Founders() {
     <section id="founders" className={classes.founders}>
       <div className="container">
         <div className={classes.title}>
-          <SectionLabel color="section-label-two">
+          <SectionLabel color="section-label-two center">
             {foundersSection.label}
           </SectionLabel>
-          <h3 className="section-title">{foundersSection.title}</h3>
+          <h3 className="section-title center">{foundersSection.title}</h3>
         </div>
         <div className={`${classes.foundersList} flex-row`}>
           {founders.map(({ name, job, image }) => (

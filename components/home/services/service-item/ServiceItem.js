@@ -1,18 +1,16 @@
 import Link from "next/link";
 import classes from "./ServiceItem.module.css";
 
-function ServiceItem({ title, Icon }) {
+function ServiceItem({ title, description, Icon }) {
   return (
-    <Link href={`/services/${title.toLowerCase()}`}>
-      <a className={classes.service}>
-        <div className={`${classes.item} flex-row`}>
-          <div className={classes.icon}>
-            <Icon />
-          </div>
-          <span>{title}</span>
-        </div>
-      </a>
-    </Link>
+    <div className={classes.service}>
+      <div className={classes.icon}>{Icon && <Icon />}</div>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <Link href={`/services/${title.toLowerCase()}`}>
+        <a>Read more </a>
+      </Link>
+    </div>
   );
 }
 

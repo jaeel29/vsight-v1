@@ -6,7 +6,7 @@
 
 .fixed {
   z-index: 100;
-  position: fixed;
+  position: sticky;
   padding: 5px;
   top: 0;
   left: 0;
@@ -20,6 +20,10 @@
   border-bottom: 1px solid var(--primary-bg-one);
 }
 
+.fixed .navbar ul li a {
+  opacity: 0.6;
+}
+
 .logo {
   width: 50px;
 }
@@ -30,8 +34,8 @@
 }
 
 .navbar {
-  min-width: 350px;
-  max-width: 450px;
+  min-width: 450px;
+  max-width: 550px;
 }
 
 .navbar ul {
@@ -42,11 +46,13 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.3s linear;
+  opacity: 0.4;
+  transition: all 0.2s linear;
 }
 
 .navbar ul li a:hover {
   color: var(--primary-one);
+  opacity: 1;
 }
 
 .themes {

@@ -1,0 +1,19 @@
+.infoCard {
+  width: 32%;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+.infoCard:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.infoCard span {
+  display: block;
+  margin-top: 1.7rem;
+  font-size: 20px;
+  letter-spacing: 1px;
+}

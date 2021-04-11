@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
 import { servicesPage } from "../../../data/vsight-data";
+import { useRouter } from "next/router";
 
 function ServicePage() {
   const router = useRouter();
@@ -8,9 +8,17 @@ function ServicePage() {
 
   return (
     <div>
-      <service.Icon />
-      <h1>{service.title}</h1>
-      <p>{service.content}</p>
+      {service && service.icon}
+      <h1>{service ? service.title : "Service title"}</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
+        voluptas? Nesciunt tenetur at est aut libero repudiandae eaque facere
+        odio temporibus, repellat natus saepe quam, et, maiores nihil nemo
+        aperiam. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Dolorem, voluptas? Nesciunt tenetur at est aut libero repudiandae eaque
+        facere odio temporibus, repellat natus saepe quam, et, maiores nihil
+        nemo aperiam.
+      </p>
     </div>
   );
 }

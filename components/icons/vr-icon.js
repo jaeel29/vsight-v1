@@ -222,6 +222,7 @@ const RightBottomSvg = () => {
 function VrIcon() {
   return (
     <svg
+      style={{ width: "100%" }}
       xmlns="http://www.w3.org/2000/svg"
       width="1038"
       height="617"

@@ -14,7 +14,7 @@
 .btn {
   background: var(--gradient-bg-one);
   margin: 3rem auto;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .btn::after {
