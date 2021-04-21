@@ -1,0 +1,7 @@
+{
+  "locales": ["en-US", "fr"],
+  "defaultLocale": "en-US",
+  "pages": {
+    "*": ["header", "landing", "about", "services", "founders", "contact"]
+  }
+}

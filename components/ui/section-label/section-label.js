@@ -1,4 +1,4 @@
-import classes from "./section-label.module.css";
+import classes from "./section-label.module.scss";
 
 function SectionLabel({ children, color }) {
   return (

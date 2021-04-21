@@ -1,0 +1,38 @@
+.landing {
+  margin-top: 1.5em;
+  text-align: center;
+  .title {
+    font-size: 55px;
+  }
+  .illustration {
+    margin-top: 6em;
+  }
+  .btn {
+    background: var(--gradient-bg-one);
+    margin: 3rem auto;
+    font-size: 18px;
+    &::after {
+      background: var(--gradient-bg-one);
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    .title {
+      font-size: 18px;
+      opacity: 0.8;
+      max-width: 95%;
+      margin: auto;
+      .simple {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+    .btn {
+      margin: 2rem auto 0;
+      font-size: 14px;
+    }
+    .illustration {
+      margin-top: -5rem;
+    }
+  }
+}

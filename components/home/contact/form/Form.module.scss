@@ -1,0 +1,69 @@
+.form {
+  padding: 0 2rem;
+  .inputs {
+    width: 59%;
+    input {
+      color: white;
+      width: 100%;
+      padding: 1.2rem;
+      display: block;
+      background: rgba(255, 255, 255, 0.1);
+      background-blend-mode: overlay;
+      border: 2px solid #182335;
+      border-radius: 50px;
+      outline: none;
+      transition: all 0.2s linear;
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+      &:active,
+      &:hover {
+        border: 2px solid var(--primary-two);
+      }
+    }
+  }
+  .message {
+    width: 39%;
+    textarea {
+      resize: none;
+      color: white;
+      width: 100%;
+      height: 210px;
+      padding: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      background-blend-mode: overlay;
+      border-radius: 10px;
+      border: 2px solid #182335;
+      margin-top: 4px;
+      outline: none;
+      transition: all 0.2s linear;
+      &:active,
+      &:hover {
+        border: 2px solid var(--primary-two);
+      }
+    }
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+    background-color: #101621;
+    font-size: 20px;
+    padding: 1rem 0;
+    border-radius: 5px;
+    border-radius: 50px;
+    &:after {
+      background: var(--gradient-bg-two);
+    }
+  }
+  @media screen and (max-width: 426px) {
+    padding: 0;
+    .inputs {
+      width: 100%;
+    }
+    .message {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}

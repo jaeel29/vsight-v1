@@ -1,27 +1,40 @@
 :root {
   /* Light theme */
+  --main-bg: #fff;
   --primary-one: #a267d6;
   --primary-two: #25c1f0;
   --primary-three: #182335;
+  --text-color: #18233594;
+  --menu-bg: hsl(0, 0%, 94%);
   --primary-bg-one: rgba(162, 103, 214, 0.05);
   --primary-bg-two: rgba(37, 193, 240, 0.05);
   --gradient-bg-one: linear-gradient(180deg, #a267d6 0.02%, #fda3ff 234.31%);
   --gradient-bg-two: linear-gradient(114.44deg, #25c1f0 0%, #9af3ff 100%);
+  --card-bg: #fff;
+  --contact-bg: #182335;
+  --theme-bg: hsl(217, 38%, 15%);
+  --shadow: rgba(100, 100, 111, 0.07);
 }
 
 [data-theme="dark"] {
   /* dark theme */
+  --main-bg: #11061e;
   --primary-one: #a267d6;
   --primary-two: #25c1f0;
-  --primary-three: #182335;
+  --primary-three: #f5f9ff;
+  --menu-bg: hsl(268, 67%, 10%);
+  --text-color: #ffffff7a;
   --primary-bg-one: rgba(162, 103, 214, 0.05);
   --primary-bg-two: rgba(37, 193, 240, 0.05);
   --gradient-bg-one: linear-gradient(180deg, #a267d6 0.02%, #fda3ff 234.31%);
   --gradient-bg-two: linear-gradient(114.44deg, #25c1f0 0%, #9af3ff 100%);
+  --card-bg: #000;
+  --theme-bg: hsl(267, 63%, 17%);
+  --contact-bg: #1c0b31;
+  --shadow: rgba(129, 129, 136, 0.07);
 }
 
 /* FONTS */
-
 @font-face {
   font-family: "KonnectRegular";
   src: url("/fonts/KonnectRegular.woff");
@@ -44,7 +57,8 @@
 
 body {
   font-family: "KonnectRegular", sans-serif;
-  height: 3000px;
+  background-color: var(--main-bg);
+  /* height: 5000px; */
 }
 
 p,
@@ -86,8 +100,8 @@ li {
 }
 
 .container {
-  width: 75rem;
   max-width: 75rem;
+  width: 90%;
   margin: auto;
 }
 
@@ -120,7 +134,6 @@ li {
 .paragraph {
   color: rgba(24, 35, 53, 0.6);
   font-size: 18px;
-  /* line-height: 24px; */
 }
 
 .text-gradient {
@@ -138,4 +151,24 @@ li {
 .center {
   margin: 0 auto;
   text-align: center;
+}
+
+/* This code is for Tablet screen */
+@media screen and (max-width: 769px) {
+  .section-title {
+    font-size: 40px;
+  }
+}
+
+/* This code is for mobile screen */
+@media screen and (max-width: 426px) {
+  .flex-row {
+    display: block;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .text-gradient {
+    font-size: 40px;
+  }
 }

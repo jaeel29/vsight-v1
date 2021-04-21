@@ -1,8 +1,7 @@
-import React from "react";
-
-function AboutIllustration() {
+function AboutIllustration({ className }) {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="410"
       height="440"

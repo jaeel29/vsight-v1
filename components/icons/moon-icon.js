@@ -1,8 +1,10 @@
 import React from "react";
 
-function MoonIcon() {
+function MoonIcon({ toggleToDark }) {
   return (
     <svg
+      style={{ cursor: "pointer" }}
+      onClick={toggleToDark}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

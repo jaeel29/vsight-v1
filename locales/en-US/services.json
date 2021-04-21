@@ -1,0 +1,34 @@
+{
+  "label": "Services",
+  "title": "Simple process to start",
+  "industrial": {
+    "title": "Industrial",
+    "description": "We can provide solutions that make training and maintenance cost and time efficient.",
+    "image": "/images/industrial.png"
+  },
+  "education": {
+    "title": "Education",
+    "description": "VR and AR make the learning process more entertaining and interesting, prevent boredom and focus loss.",
+    "image": "/images/industrial.png"
+  },
+  "e-commerce": {
+    "title": "E-commerce",
+    "description": "Provide solutions that let the user be more confident shopping on internet. The different features possible increases the user’s satisfaction and active time in the platform.",
+    "image": "/images/industrial.png"
+  },
+  "advertisement": {
+    "title": "Advertisement",
+    "description": "XR technologies open new doors toward advertisement, providing new ways to display products and get more engagement from the users.",
+    "image": "/images/industrial.png"
+  },
+  "real-estat": {
+    "title": "Real-estat",
+    "description": "Provide your costumer a virtual tour of the property’s inside and surroundings, letting him feel free to decorate or change colors and materials as if he already owns it.",
+    "image": "/images/industrial.png"
+  },
+  "consulting": {
+    "title": "Consulting",
+    "description": "We can assist you to developpe your activity to the next level, and find out how XR technologies can benefit your business.",
+    "image": "/images/industrial.png"
+  }
+}

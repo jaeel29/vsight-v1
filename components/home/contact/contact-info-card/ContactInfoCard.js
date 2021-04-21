@@ -1,4 +1,4 @@
-import classes from "./ContactInfoCard.module.css";
+import classes from "./ContactInfoCard.module.scss";
 
 function ContactInfoCard({ text, icon, href, target }) {
   return (

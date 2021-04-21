@@ -1,0 +1,16 @@
+.founders {
+  margin-top: 7rem;
+  .foundersList {
+    flex-wrap: wrap;
+    margin-top: 4rem;
+  }
+
+  @media screen and (max-width: 426px) {
+    & {
+      .foundersList {
+        width: 100%;
+        margin: 4rem auto 0;
+      }
+    }
+  }
+}

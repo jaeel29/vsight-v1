@@ -1,17 +1,24 @@
 import { links } from "../../../data/vsight-data";
 import { useState } from "react";
 import Image from "next/image";
-import classes from "./Header.module.css";
+import classes from "./Header.module.scss";
 import CustomLink from "../../ui/custom-link/custom-link";
-import MoonIcon from "../../icons/moon-icon";
+import { useTheme } from "next-themes";
+import useTranslation from "next-translate/useTranslation";
+import { animateScroll as scrollHome } from "react-scroll";
+import Sphere from "../../icons/sphere";
 
 function Header() {
   const [scroll, setScroll] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const { theme } = useTheme();
+  const { t } = useTranslation();
 
   //! IMPORTANT
   if (process.browser) {
     const fixHeaderAtTop = () => {
-      if (window.scrollY > 120) {
+      setShowMenu(false);
+      if (window.scrollY > 90) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -28,30 +35,43 @@ function Header() {
       }
     >
       <div className="container">
-        <div className="flex-row">
+        <div className={classes.flex}>
           <div className={classes.logo}>
             <Image
-              src="/images/vsight-logo.png"
+              onClick={() => scrollHome.scrollToTop()}
+              src={
+                theme === "light"
+                  ? "/images/vsight-logo.png"
+                  : "/images/vsight-logo-light.png"
+              }
               alt="vsight logo"
               width={100}
               height={100}
             />
           </div>
-          <div className={classes.navbar}>
+          <div
+            className={`${classes.navbar} ${showMenu ? classes.show : null}`}
+          >
             <ul className="flex-row">
               {links.map((link, idx) => (
                 <CustomLink
+                  setShowMenu={setShowMenu}
                   key={`link--${idx}`}
                   href={link.toLowerCase()}
                   offset={-170}
                 >
-                  {link}
+                  {t(`header:${link}`)}
                 </CustomLink>
               ))}
             </ul>
           </div>
-          <div className={classes.themes}>
-            <MoonIcon />
+          <div
+            onClick={() => setShowMenu(!showMenu)}
+            className={`${classes.menu} ${!showMenu ? classes.animate : null}`}
+          >
+            <Sphere className={classes.sphere} />
+            <Sphere className={classes.sphere} />
+            <Sphere className={classes.sphere} />
           </div>
         </div>
       </div>

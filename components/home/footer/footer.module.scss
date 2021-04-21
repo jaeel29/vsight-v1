@@ -1,0 +1,41 @@
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 1rem;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    .toTop {
+      margin-left: 0.5rem;
+    }
+    .socialMedia {
+      display: flex;
+      align-items: center;
+      li {
+        margin-left: 0.5rem;
+        font-size: 13px;
+        cursor: pointer;
+        &:hover {
+          color: var(--primary-one);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 426px) {
+    .content {
+      flex-direction: column;
+      .toTop {
+        margin-bottom: 0.5rem;
+        order: -1;
+      }
+      .socialMedia {
+        margin-top: 0.5rem;
+        li {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.about {
+  margin-top: 7rem;
+  .info {
+    flex: 1;
+    padding-left: 7rem;
+    p {
+      margin-top: 1rem;
+      color: var(--text-color);
+    }
+    .btn {
+      /* background: var(--gradient-bg-two); */
+      background: var(--gradient-bg-two);
+      margin-top: 1.2rem;
+      font-size: 15px;
+      &::after {
+        background: var(--gradient-bg-two);
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    & {
+      .info {
+        flex: 1;
+        padding-left: 2rem;
+      }
+      .illustration {
+        width: 40%;
+      }
+    }
+  }
+  @media screen and (max-width: 426px) {
+    text-align: center;
+    margin-top: -7rem;
+    .info {
+      padding: 0 1rem;
+      p {
+        font-size: 16px;
+      }
+      .btn {
+        margin: 1.5rem auto;
+      }
+      .center {
+        margin: 0 auto 1rem;
+      }
+    }
+    .illustration {
+      display: none;
+    }
+  }
+}

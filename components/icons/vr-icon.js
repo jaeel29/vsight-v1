@@ -9,10 +9,6 @@ const LeftTopSvg = () => {
   });
   return (
     <animated.g style={props}>
-      <path
-        fill="url(#paint0_linear)"
-        d="M837.322 1.218s20.493 224.872 20.204 240.822l-179.78 167.643-280.2 17.401L469.797 27.49S741.982-3.84 837.322 1.218z"
-      ></path>
       <g filter="url(#filter0_b)" opacity="0.25">
         <path
           fill="#A267D6"

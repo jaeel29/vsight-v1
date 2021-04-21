@@ -1,0 +1,20 @@
+.blogs {
+  margin-top: 7rem;
+  .articles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+  @media screen and (max-width: 769px) {
+    .articles {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 426px) {
+    margin-top: 5rem;
+    .articles {
+      display: block;
+    }
+  }
+}

@@ -1,26 +1,29 @@
-import { servicesSection } from "../../../data/vsight-data";
-import classes from "./Services.module.css";
+import { services } from "../../../data/vsight-data";
+import classes from "./Services.module.scss";
 import ServiceItem from "./service-item/ServiceItem";
 import SectionLabel from "../../ui/section-label/section-label";
-import Industrial from "../../icons/industrial-icon";
+import useTranslation from "next-translate/useTranslation";
 
 function Services() {
+  const { t } = useTranslation();
   return (
     <section id="services" className={classes.services}>
       <div className="container">
         <div className={classes.title}>
           <SectionLabel color="section-label-one center">
-            {servicesSection.label}
+            {t("services:label")}
           </SectionLabel>
-          <h3 className="section-title center">{servicesSection.title}</h3>
+          <h3 className="section-title center">{t("services:title")}</h3>
         </div>
         <div className={`${classes.list} flex-row`}>
-          <ServiceItem title="Industrial" Icon={Industrial} />
-          <ServiceItem title="Education" Icon={Industrial} />
-          <ServiceItem title="E-commerce" Icon={Industrial} />
-          <ServiceItem title="Advertisement" Icon={Industrial} />
-          <ServiceItem title="Real-estat" Icon={Industrial} />
-          <ServiceItem title="Consulting" Icon={Industrial} />
+          {services?.map((_, idx) => (
+            <ServiceItem
+              key={`#-${idx}`}
+              title={t(`services:${services[idx]}.title`)}
+              image={t(`services:${services[idx]}.image`)}
+              description={t(`services:${services[idx]}.description`)}
+            />
+          ))}
         </div>
       </div>
     </section>

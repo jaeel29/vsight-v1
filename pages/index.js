@@ -1,6 +1,7 @@
-// import ToggleTheme from "../components/ui/toggle-theme";
 import Home from "../components/home/Home";
 
-export default function Global() {
+function Global() {
   return <Home />;
 }
+
+export default Global;

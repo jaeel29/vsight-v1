@@ -1,0 +1,26 @@
+.infoCard {
+  width: 32%;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  span {
+    display: block;
+    margin-top: 1.7rem;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  @media screen and (max-width: 769px) {
+    padding: 30px 15px;
+  }
+  @media screen and (max-width: 426px) {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
