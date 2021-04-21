@@ -1,6 +1,6 @@
 import classes from "./Landing.module.scss";
 import Button from "../../ui/Button/Button";
-import RightArrow from "../../icons/right-arrow";
+import LandingArrow from "../../icons/arrow-landing";
 import VrIcon from "../../icons/vr-icon";
 import useTranslation from "next-translate/useTranslation";
 
@@ -18,7 +18,7 @@ function Landing() {
         </h1>
         <Button style={classes.btn}>
           <span className={classes.buttonText}> {t("landing:button")}</span>
-          <RightArrow />
+          <LandingArrow />
         </Button>
         <div className={classes.illustration}>
           <VrIcon />

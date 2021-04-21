@@ -58,6 +58,7 @@
 body {
   font-family: "KonnectRegular", sans-serif;
   background-color: var(--main-bg);
+  overflow-x: hidden;
   /* height: 5000px; */
 }
 

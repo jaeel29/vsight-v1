@@ -7,6 +7,8 @@ import { useTheme } from "next-themes";
 import useTranslation from "next-translate/useTranslation";
 import { animateScroll as scrollHome } from "react-scroll";
 import Sphere from "../../icons/sphere";
+import ToggleTheme from "../../ui/toggle-theme/toggle-theme";
+import ToggleLang from "../../ui/toggle-language/toggle-language";
 
 function Header() {
   const [scroll, setScroll] = useState(false);
@@ -64,6 +66,14 @@ function Header() {
                 </CustomLink>
               ))}
             </ul>
+          </div>
+          <div className={classes.togglers}>
+            <div className={classes.langs}>
+              <ToggleLang />
+            </div>
+            <div className={classes.themes}>
+              <ToggleTheme />
+            </div>
           </div>
           <div
             onClick={() => setShowMenu(!showMenu)}

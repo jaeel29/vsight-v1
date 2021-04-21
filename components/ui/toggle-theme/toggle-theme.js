@@ -12,25 +12,14 @@ function ToggleTheme() {
 
   if (!mounted) return null;
 
-  const style = {
-    position: "fixed",
-    top: "200px",
-    right: "0",
-    padding: ".7rem",
-    borderTopLeftRadius: "10px",
-    borderBottomLeftRadius: "10px",
-    color: "white",
-    backgroundColor: "var(--theme-bg)",
-  };
-
   return (
-    <div style={style}>
+    <>
       {theme === "light" ? (
         <MoonIcon toggleToDark={() => setTheme("dark")} />
       ) : (
         <SunIcon toggleThemes={() => setTheme("light")} />
       )}
-    </div>
+    </>
   );
 }
 

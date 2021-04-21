@@ -6,8 +6,7 @@ import Founders from "./founders/Founders";
 import Contact from "./contact/Contact";
 import BlogList from "./blog/blog-list";
 import Footer from "./footer/footer";
-import ToggleTheme from "../ui/toggle-theme/toggle-theme";
-import ToggleLang from "../ui/toggle-language/toggle-language";
+import Light from "../icons/accessoirs/light";
 
 const Home = () => {
   return (
@@ -20,8 +19,7 @@ const Home = () => {
       <BlogList />
       <Contact />
       <Footer />
-      <ToggleTheme />
-      <ToggleLang />
+      <Light />
     </>
   );
 };
