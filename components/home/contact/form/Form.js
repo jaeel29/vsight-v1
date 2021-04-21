@@ -30,7 +30,9 @@ function Form() {
           ></textarea>
         </div>
       </div>
-      <Button style={classes.btn}>{t("contact:send")}</Button>
+      <Button style={classes.btn}>
+        <span className="text-gradient">{t("contact:send")}</span>
+      </Button>
     </form>
   );
 }

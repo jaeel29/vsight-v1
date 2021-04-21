@@ -18,9 +18,12 @@ function Footer() {
           <ul className={classes.socialMedia}>
             {links.map((link, idx) => (
               <CustomLink
-                key={`link--${idx}`}
+                key={`f--link--${idx}`}
                 href={link.toLowerCase()}
                 offset={-170}
+                setShowMenu={() => {
+                  return;
+                }}
               >
                 {t(`header:${link}`)}
               </CustomLink>

@@ -12,21 +12,21 @@ function BlogList() {
         </div>
         <div className={classes.articles}>
           <BlogCard
-            imgUrl="/images/blog.jpg"
+            imgUrl="/images/blog/vr2.jpg"
             imgAlt="flowers"
             tag="Nature"
             title="Virtual reality (VR) refers to a computer-generated."
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
           />
           <BlogCard
-            imgUrl="/images/blog.jpg"
+            imgUrl="/images/blog/vr3.jpg"
             imgAlt="flowers"
             tag="VR / AR"
             title="Virtual reality (VR) refers to a computer-generated."
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
           />
           <BlogCard
-            imgUrl="/images/blog-img.jpg"
+            imgUrl="/images/blog/vr1.jpg"
             imgAlt="men with headset"
             tag="VR / AR"
             title="Virtual reality (VR) refers to a computer-generated."

@@ -47,14 +47,11 @@
     display: block;
     width: 100%;
     margin: 2rem 0;
-    background-color: #101621;
+    background-color: #11061e;
     font-size: 20px;
     padding: 1rem 0;
-    border-radius: 5px;
     border-radius: 50px;
-    &:after {
-      background: var(--gradient-bg-two);
-    }
+    border: 2px solid #fff;
   }
   @media screen and (max-width: 426px) {
     padding: 0;
@@ -64,6 +61,14 @@
     .message {
       width: 100%;
       margin-top: 1rem;
+    }
+    .btn {
+      width: 90%;
+      margin: 2rem auto;
+      padding: 0.6rem 0;
+      span {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -4,31 +4,31 @@
   "industrial": {
     "title": "Industriel",
     "description": "Nous pouvons fournir des solutions qui réduisent les coûts et le temps de formation et de maintenance.",
-    "image": "/images/industrial.png"
+    "image": "/images/services/industrial.png"
   },
   "education": {
     "title": "Éducation",
     "description": "La VR et la AR rendent le processus d'apprentissage plus divertissant et intéressant, ils permettent aussi d’évité l'ennui et la perte de concentration.",
-    "image": "/images/industrial.png"
+    "image": "/images/services/education.png"
   },
   "e-commerce": {
     "title": "E-commerce",
     "description": "Nous pouvons fournir des solutions qui permettent à l’utilisateur d’acquérir plus de confiance en achetant sur Internet. Les différentes fonctionnalités possibles, augmentent la satisfaction de l’utilisateur et son temps d’activité sur la plateforme.",
-    "image": "/images/industrial.png"
+    "image": "/images/services/e-commerce.png"
   },
   "advertisement": {
     "title": "Publicité",
     "description": "Les technologies XR ouvrent de nouvelles portes pour la publicité, offrant de nouvelles façons d'afficher les produits et obtenir plus d'engagement de la part des utilisateurs.",
-    "image": "/images/industrial.png"
+    "image": "/images/services/advertisement.png"
   },
   "real-estat": {
     "title": "Immobilier",
     "description": "Offrez à votre client une visite virtuelle de l'intérieur et des environs de la propriété, lui permettant de se sentir libre de décorer ou de changer les couleurs et matériaux comme s'il en était déjà propriétaire.",
-    "image": "/images/industrial.png"
+    "image": "/images/services/real-estate.png"
   },
   "consulting": {
     "title": "Consulting",
     "description": "Nous vous assistons à développer votre activité au niveau supérieur et découvrir comment les technologies XR peuvent être bénéfique à votre entreprise.",
-    "image": "/images/industrial.png"
+    "image": "/images/services/consulting.png"
   }
 }
