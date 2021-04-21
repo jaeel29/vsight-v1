@@ -21,7 +21,7 @@ function Header() {
     if (process.browser) {
       const fixHeaderAtTop = () => {
         setShowMenu(false);
-        if (window.scrollY > 90) {
+        if (window.scrollY > 70) {
           setScroll(true);
         } else {
           setScroll(false);

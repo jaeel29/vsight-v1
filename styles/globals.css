@@ -11,7 +11,6 @@
   --gradient-bg-one: linear-gradient(180deg, #a267d6 0.02%, #fda3ff 234.31%);
   --gradient-bg-two: linear-gradient(114.44deg, #25c1f0 0%, #9af3ff 100%);
   --card-bg: #fff;
-  --contact-bg: #182335;
   --theme-bg: hsl(217, 38%, 19%);
   --shadow: rgba(100, 100, 111, 0.07);
   --svg: #fff;
@@ -32,8 +31,7 @@
   --gradient-bg-two: linear-gradient(114.44deg, #25c1f0 0%, #9af3ff 100%);
   --card-bg: #000;
   --theme-bg: hsl(267, 63%, 19%);
-  --contact-bg: #1c0b31;
-  --shadow: rgba(129, 129, 136, 0.07);
+  --shadow: hsl(268, 67%, 6%);
   --svg: #2e1c3e;
   --path: #fff;
 }
@@ -63,6 +61,19 @@ body {
   font-family: "KonnectRegular", sans-serif;
   background-color: var(--main-bg);
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #111;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-one); /* color of the scroll thumb */
+  border-radius: 20px;
 }
 
 p,

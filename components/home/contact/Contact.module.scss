@@ -4,7 +4,7 @@
   width: 100%;
   height: max-content;
   padding: 20rem 0 15rem;
-  background-color: var(--contact-bg);
+  background-color: #1c0b31;
   .content {
     width: 70%;
     margin: auto;
@@ -19,13 +19,7 @@
     width: 100%;
     fill: var(--main-bg);
   }
-  .bottomWave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    fill: var(--main-bg);
-  }
+
   @media screen and (max-width: 769px) {
     padding: 10rem 0 10rem;
     .content {

@@ -1,11 +1,11 @@
 .blog {
   width: 30%;
   padding: 1rem;
-  transition: all 0.3s linear;
+  box-shadow: var(--shadow) 0px 7px 29px 0px;
   &:hover {
-    //  box-shadow: var(--shadow) 0px 7px 29px 0px;
     .image {
       img {
+        transition: all 0.3s linear;
         transform: scale(1.03);
       }
     }
