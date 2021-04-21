@@ -1,5 +1,5 @@
 import { links } from "../../../data/vsight-data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import classes from "./Header.module.scss";
 import CustomLink from "../../ui/custom-link/custom-link";
@@ -16,19 +16,21 @@ function Header() {
   const { theme } = useTheme();
   const { t } = useTranslation();
 
-  //! IMPORTANT
-  if (process.browser) {
-    const fixHeaderAtTop = () => {
-      setShowMenu(false);
-      if (window.scrollY > 90) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-    };
+  //* USEFULL CODE
+  useEffect(() => {
+    if (process.browser) {
+      const fixHeaderAtTop = () => {
+        setShowMenu(false);
+        if (window.scrollY > 90) {
+          setScroll(true);
+        } else {
+          setScroll(false);
+        }
+      };
 
-    window.addEventListener("scroll", fixHeaderAtTop);
-  }
+      window.addEventListener("scroll", fixHeaderAtTop);
+    }
+  }, []);
 
   return (
     <header
