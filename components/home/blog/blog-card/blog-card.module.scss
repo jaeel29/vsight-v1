@@ -1,6 +1,7 @@
 .blog {
-  width: 30%;
+  width: 32%;
   padding: 1rem;
+  display: block;
   box-shadow: var(--shadow) 0px 7px 29px 0px;
   &:hover {
     .image {
@@ -13,7 +14,7 @@
   .image {
     width: 100%;
     max-height: 380px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     border-radius: 30px 0px 30px 30px;
     overflow: hidden;
     img {
@@ -35,6 +36,10 @@
       color: var(--primary-three);
       opacity: 0.6;
       font-size: 16px;
+      line-height: 1.6;
+      span {
+        margin-left: 1rem;
+      }
     }
   }
 
@@ -45,5 +50,10 @@
   @media screen and (max-width: 426px) {
     margin-bottom: 1rem;
     width: 99%;
+    .content {
+      h2 {
+        font-size: 22px;
+      }
+    }
   }
 }

@@ -1,8 +1,20 @@
 .services {
-  margin-top: 7rem;
-}
-
-.list {
-  flex-wrap: wrap;
   margin-top: 2rem;
+  position: relative;
+  padding-top: 20rem;
+  background: linear-gradient(to bottom, #c179ff0e 0%, var(--main-bg) 100%);
+  .list {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .topWave {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    fill: var(--main-bg);
+  }
+  @media screen and (max-width: 426px) {
+    padding-top: 10rem;
+  }
 }

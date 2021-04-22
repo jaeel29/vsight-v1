@@ -31,7 +31,7 @@
   --gradient-bg-two: linear-gradient(114.44deg, #25c1f0 0%, #9af3ff 100%);
   --card-bg: #000;
   --theme-bg: hsl(267, 63%, 19%);
-  --shadow: hsl(268, 67%, 6%);
+  --shadow: hsl(268, 67%, 8%);
   --svg: #2e1c3e;
   --path: #fff;
 }
