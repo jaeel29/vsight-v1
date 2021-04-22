@@ -69,13 +69,8 @@ function Header() {
               ))}
             </ul>
           </div>
-          <div className={classes.togglers}>
-            <div className={classes.langs}>
-              <ToggleLang />
-            </div>
-            <div className={classes.themes}>
-              <ToggleTheme />
-            </div>
+          <div className={classes.themes}>
+            <ToggleTheme />
           </div>
           <div
             onClick={() => setShowMenu(!showMenu)}
