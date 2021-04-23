@@ -1,7 +1,7 @@
 // Nedeed Icons
-import EmailIcon from "../components/icons/email-icon";
-import PhoneIcon from "../components/icons/phone-icon";
-import AddressIcon from "../components/icons/address-icon";
+import EmailIcon from "../components/icons/contact/email-icon";
+import PhoneIcon from "../components/icons/contact/phone-icon";
+import AddressIcon from "../components/icons/contact/address-icon";
 
 // Links name
 export const links = ["about", "services", "founders", "blog", "contact"];

@@ -6,9 +6,9 @@ import CustomLink from "../../ui/custom-link/custom-link";
 import { useTheme } from "next-themes";
 import useTranslation from "next-translate/useTranslation";
 import { animateScroll as scrollHome } from "react-scroll";
-import Sphere from "../../icons/sphere";
+import Sphere from "../../icons/accessoirs/sphere";
 import ToggleTheme from "../../ui/toggle-theme/toggle-theme";
-import ToggleLang from "../../ui/toggle-language/toggle-language";
+// import ToggleLang from "../../ui/toggle-language/toggle-language";
 
 function Header() {
   const [scroll, setScroll] = useState(false);

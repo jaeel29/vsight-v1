@@ -3,7 +3,7 @@ import classes from "./Services.module.scss";
 import ServiceItem from "./service-item/ServiceItem";
 import SectionLabel from "../../ui/section-label/section-label";
 import useTranslation from "next-translate/useTranslation";
-import ServiceWave from "../../icons/service-bg-top";
+import ServiceWave from "../../icons/services/service-bg-top";
 
 function Services() {
   const { t } = useTranslation();

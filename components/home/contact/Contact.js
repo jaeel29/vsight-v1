@@ -1,5 +1,5 @@
 import { contactInfo } from "../../../data/vsight-data";
-import ContactTopWave from "../../icons/contact-bg-top";
+import ContactTopWave from "../../icons/contact/contact-bg-top";
 import classes from "./Contact.module.scss";
 import SectionLabel from "../../ui/section-label/section-label";
 import ContactInfoCard from "./contact-info-card/ContactInfoCard";

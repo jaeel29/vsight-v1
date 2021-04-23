@@ -1,6 +1,9 @@
 import classes from "./blog-list.module.scss";
 import BlogCard from "./blog-card/blog-card";
+import RightArrow from "../../icons/accessoirs/right-arrow";
 import SectionLabel from "../../ui/section-label/section-label";
+import Button from "../../ui/Button/Button";
+import Link from "next/link";
 
 function BlogList() {
   return (
@@ -34,6 +37,15 @@ function BlogList() {
           />
         </div>
       </div>
+
+      <Link href="/blog">
+        <a>
+          <Button style={classes.btn}>
+            <span className={classes.buttonText}>All posts</span>
+            <RightArrow />
+          </Button>
+        </a>
+      </Link>
     </section>
   );
 }

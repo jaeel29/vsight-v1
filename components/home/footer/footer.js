@@ -1,5 +1,5 @@
 import classes from "./footer.module.scss";
-import ToTopArrow from "../../icons/to-top-arrow";
+import ToTopArrow from "../../icons/accessoirs/to-top-arrow";
 import { links } from "../../../data/vsight-data";
 import { animateScroll as scroll } from "react-scroll";
 import useTranslation from "next-translate/useTranslation";

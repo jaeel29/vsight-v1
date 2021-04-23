@@ -1,8 +1,9 @@
 import SectionLabel from "../../ui/section-label/section-label";
-import AboutIllustration from "../../icons/about-ilustration";
-import RightArrow from "../../icons/right-arrow";
+import AboutIllustration from "../../icons/about/about-ilustration";
+import RightArrow from "../../icons/accessoirs/right-arrow";
 import Button from "../../ui/Button/Button";
 import classes from "./About.module.scss";
+import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 
 function About() {
@@ -18,10 +19,16 @@ function About() {
             </SectionLabel>
             <h3 className="section-title">{t("about:title")}</h3>
             <p className="paragraph">{t("about:content")}</p>
-            <Button style={classes.btn}>
-              <span className={classes.buttonText}>{t("about:button")}</span>
-              <RightArrow />
-            </Button>
+            <Link href="/about">
+              <a>
+                <Button style={classes.btn}>
+                  <span className={classes.buttonText}>
+                    {t("about:button")}
+                  </span>
+                  <RightArrow />
+                </Button>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

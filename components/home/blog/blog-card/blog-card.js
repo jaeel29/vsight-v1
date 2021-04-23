@@ -1,7 +1,7 @@
 import classes from "./blog-card.module.scss";
 import Image from "next/image";
 import SectionLabel from "../../../ui/section-label/section-label";
-import RightArrow from "../../../icons/right-arrow";
+import RightArrow from "../../../icons/accessoirs/right-arrow";
 import Link from "next/link";
 
 function BlogCard({ imgUrl, imgAlt, tag, title, text }) {

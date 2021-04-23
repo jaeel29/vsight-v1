@@ -6,6 +6,14 @@
     justify-content: space-between;
     margin-top: 3rem;
   }
+  .btn {
+    margin: 2rem auto;
+    background: var(--gradient-bg-one);
+    font-size: 15px;
+    &::after {
+      background: var(--gradient-bg-one);
+    }
+  }
   @media screen and (max-width: 769px) {
     .articles {
       flex-wrap: wrap;
