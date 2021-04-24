@@ -10,9 +10,10 @@
     .toTop {
       margin-left: 0.5rem;
     }
-    .socialMedia {
+    .links {
       display: flex;
       align-items: center;
+      margin: 0.5rem 0;
       li {
         margin-left: 0.5rem;
         font-size: 13px;
@@ -23,7 +24,8 @@
       }
     }
   }
-  @media screen and (max-width: 426px) {
+
+  @media screen and (max-width: 769px) {
     padding: 1rem 0;
     .content {
       flex-direction: column;
@@ -31,7 +33,7 @@
         margin-bottom: 0.5rem;
         order: -1;
       }
-      .socialMedia {
+      .links {
         margin-top: 0.5rem;
         li {
           margin-left: 0.5rem;

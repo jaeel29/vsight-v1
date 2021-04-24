@@ -6,11 +6,9 @@
   }
 
   @media screen and (max-width: 426px) {
-    & {
-      .foundersList {
-        width: 100%;
-        margin: 4rem auto 0;
-      }
+    .foundersList {
+      width: 100%;
+      margin: 4rem auto 0;
     }
   }
 }

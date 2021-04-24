@@ -27,17 +27,22 @@
       margin-top: 0.5rem;
     }
   }
-  @media screen and (max-width: 769px) {
-    & {
-      text-align: center;
-      width: 48%;
-      margin: 2rem auto;
+  @media screen and (max-width: 1025px) {
+    text-align: center;
+    width: 32%;
+    .info {
+      .name {
+        font-size: 29px;
+      }
     }
   }
+  @media screen and (max-width: 769px) {
+    text-align: center;
+    width: 48%;
+    margin: 2rem auto;
+  }
   @media screen and (max-width: 426px) {
-    & {
-      text-align: center;
-      width: 100%;
-    }
+    text-align: center;
+    width: 100%;
   }
 }

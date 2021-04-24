@@ -1,0 +1,24 @@
+.lang {
+  a {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 5px;
+    }
+    .image {
+      margin-top: 2px;
+    }
+  }
+  @media screen and (max-width: 426px) {
+    display: inline-block;
+    position: fixed;
+    top: 260px;
+    right: -4px;
+    padding: 0.7rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    background-color: var(--theme-bg);
+    transition: all 0.4s linear;
+  }
+}

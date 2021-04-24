@@ -6,7 +6,6 @@ import useTranslation from "next-translate/useTranslation";
 import Logo from "./logo/logo";
 import Sphere from "../../icons/accessoirs/sphere";
 import ToggleTheme from "../../ui/toggle-theme/toggle-theme";
-// import ToggleLang from "../../ui/toggle-language/toggle-language";
 
 function Header() {
   const [scroll, setScroll] = useState(false);
