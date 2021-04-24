@@ -21,19 +21,19 @@ export const founders = [
   {
     name: "Youssef Moukhlis",
     job: "XR Developer Expert",
-    image: "/images/youssef.png",
+    image: "/images/founders/youssef.png",
     linkedinUrl: "",
   },
   {
     name: "Saad El Yousfi",
     job: "CEO",
-    image: "/images/saad.png",
+    image: "/images/founders/saad.png",
     linkedinUrl: "",
   },
   {
     name: "Ahmed Khilad",
     job: "3D Graphic Expert",
-    image: "/images/ahmed.png",
+    image: "/images/founders/ahmed.png",
     linkedinUrl: "",
   },
 ];

@@ -4,6 +4,7 @@ import RightArrow from "../../icons/accessoirs/right-arrow";
 import SectionLabel from "../../ui/section-label/section-label";
 import Button from "../../ui/Button/Button";
 import Link from "next/link";
+import { posts } from "../../../data/blog";
 
 function BlogList() {
   return (
@@ -14,27 +15,16 @@ function BlogList() {
           <h3 className="section-title center">Latest Articles</h3>
         </div>
         <div className={classes.articles}>
-          <BlogCard
-            imgUrl="/images/blog/vr2.jpg"
-            imgAlt="flowers"
-            tag="Nature"
-            title="Virtual reality (VR) refers to a computer-generated."
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
-          />
-          <BlogCard
-            imgUrl="/images/blog/vr3.jpg"
-            imgAlt="flowers"
-            tag="VR / AR"
-            title="Virtual reality (VR) refers to a computer-generated."
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
-          />
-          <BlogCard
-            imgUrl="/images/blog/vr1.jpg"
-            imgAlt="men with headset"
-            tag="VR / AR"
-            title="Virtual reality (VR) refers to a computer-generated."
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
-          />
+          {posts.map(({ image, text, title, tags }) => (
+            <BlogCard
+              key={image}
+              imgUrl={image}
+              imgAlt=""
+              tags={tags}
+              title={title}
+              text={text}
+            />
+          ))}
         </div>
       </div>
 

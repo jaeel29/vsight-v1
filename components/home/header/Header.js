@@ -1,11 +1,9 @@
 import { links } from "../../../data/vsight-data";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import classes from "./Header.module.scss";
 import CustomLink from "../../ui/custom-link/custom-link";
-import { useTheme } from "next-themes";
 import useTranslation from "next-translate/useTranslation";
-import { animateScroll as scrollHome } from "react-scroll";
+import Logo from "./logo/logo";
 import Sphere from "../../icons/accessoirs/sphere";
 import ToggleTheme from "../../ui/toggle-theme/toggle-theme";
 // import ToggleLang from "../../ui/toggle-language/toggle-language";
@@ -13,7 +11,7 @@ import ToggleTheme from "../../ui/toggle-theme/toggle-theme";
 function Header() {
   const [scroll, setScroll] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const { theme } = useTheme();
+
   const { t } = useTranslation();
 
   //* USEFULL CODE
@@ -40,22 +38,13 @@ function Header() {
     >
       <div className="container">
         <div className={classes.flex}>
-          <div className={classes.logo}>
-            <Image
-              onClick={() => scrollHome.scrollToTop()}
-              src={
-                theme === "light"
-                  ? "/images/vsight-logo.png"
-                  : "/images/vsight-logo-light.png"
-              }
-              alt="vsight logo"
-              width={100}
-              height={100}
-            />
-          </div>
+          <Logo className={classes.logo} />
           <div
             className={`${classes.navbar} ${showMenu ? classes.show : null}`}
           >
+            <div className={classes.logo}>
+              <Logo className={classes.mobileLogo} />
+            </div>
             <ul className="flex-row">
               {links.map((link, idx) => (
                 <CustomLink

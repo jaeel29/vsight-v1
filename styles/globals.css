@@ -15,6 +15,7 @@
   --shadow: rgba(100, 100, 111, 0.07);
   --svg: #fff;
   --path: #11061e;
+  --tags-bg: rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="dark"] {
@@ -34,6 +35,7 @@
   --shadow: hsl(268, 67%, 8%);
   --svg: #2e1c3e;
   --path: #fff;
+  --tags-bg: rgba(255, 255, 255, 0.05);
 }
 
 /* FONTS */
