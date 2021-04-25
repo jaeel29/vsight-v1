@@ -12,7 +12,7 @@ function Founder({ image, name, job, linkedinUrl }) {
         <h3 className={classes.name}>{name}</h3>
         <span className={classes.job}>{job}</span>
         <a href={linkedinUrl} target="_blank" className={classes.link}>
-          Profile
+          LinkedIn
         </a>
       </div>
     </div>
