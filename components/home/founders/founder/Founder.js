@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classes from "./Founder.module.scss";
 
-function Founder({ image, name, job }) {
+function Founder({ image, name, job, linkedinUrl }) {
   return (
     <div className={classes.founder}>
       <div className={classes.image}>
@@ -11,8 +11,8 @@ function Founder({ image, name, job }) {
       <div className={classes.info}>
         <h3 className={classes.name}>{name}</h3>
         <span className={classes.job}>{job}</span>
-        <a href="#" className={classes.link}>
-          Linkdin
+        <a href={linkedinUrl} target="_blank" className={classes.link}>
+          Profile
         </a>
       </div>
     </div>

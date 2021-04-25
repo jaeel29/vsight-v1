@@ -23,8 +23,37 @@
       font-size: 15px;
     }
     .link {
+      position: relative;
       display: inline-block;
-      margin-top: 0.5rem;
+      margin-top: 0.9rem;
+      padding: 0.3rem 1rem;
+      overflow: hidden;
+      background-color: var(--primary-two);
+      border-radius: 5px;
+      color: white;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20px;
+        height: 100%;
+        width: 12px;
+        transform: skewX(25deg);
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+      &:hover {
+        &::before {
+          animation: shine 0.6s ease-in-out;
+        }
+      }
+      @keyframes shine {
+        from {
+          left: -20px;
+        }
+        to {
+          left: 200%;
+        }
+      }
     }
   }
   @media screen and (max-width: 1025px) {

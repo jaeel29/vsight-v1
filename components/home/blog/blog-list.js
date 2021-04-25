@@ -28,7 +28,7 @@ function BlogList() {
         </div>
       </div>
 
-      <Link href="/blog">
+      <Link href="/">
         <a>
           <Button style={classes.btn}>
             <span className={classes.buttonText}>All posts</span>

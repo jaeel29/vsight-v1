@@ -8,7 +8,7 @@ const randomColor = ["section-label-two", "section-label-one"];
 
 function BlogCard({ imgUrl, imgAlt, tags, title, text }) {
   return (
-    <Link href={`/blog/${title}`}>
+    <Link href={`/`}>
       <a className={classes.blog}>
         <div className={classes.image}>
           <Image src={imgUrl} alt={imgAlt} width={370} height={400} />

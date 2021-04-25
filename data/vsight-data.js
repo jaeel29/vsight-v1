@@ -22,19 +22,19 @@ export const founders = [
     name: "Youssef Moukhlis",
     job: "XR Developer Expert",
     image: "/images/founders/youssef.png",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/moukhlis-youssef-9453ab198/",
   },
   {
     name: "Saad El Yousfi",
     job: "CEO",
     image: "/images/founders/saad.png",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/saad-el-yousfi-b64708183/",
   },
   {
     name: "Ahmed Khilad",
     job: "3D Graphic Expert",
     image: "/images/founders/ahmed.png",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/ahmed-khilad-46a50a151/",
   },
 ];
 

@@ -16,8 +16,14 @@ function Founders() {
           <h3 className="section-title center">{t("founders:title")}</h3>
         </div>
         <div className={`${classes.foundersList} flex-row`}>
-          {founders.map(({ name, job, image }) => (
-            <Founder key={`#-${name}`} name={name} job={job} image={image} />
+          {founders.map(({ name, job, image, linkedinUrl }) => (
+            <Founder
+              key={`#-${name}`}
+              name={name}
+              job={job}
+              image={image}
+              linkedinUrl={linkedinUrl}
+            />
           ))}
         </div>
       </div>

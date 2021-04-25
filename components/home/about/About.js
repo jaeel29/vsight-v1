@@ -19,7 +19,7 @@ function About() {
             </SectionLabel>
             <h3 className="section-title">{t("about:title")}</h3>
             <p className="paragraph">{t("about:content")}</p>
-            <Link href="/about">
+            <Link href="/">
               <a>
                 <Button style={classes.btn}>
                   <span className={classes.buttonText}>
