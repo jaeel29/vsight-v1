@@ -17,7 +17,6 @@
   max-height: 70px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(35px);
-  -webkit-backdrop-filter: blur(30px);
   border-bottom: 1px solid var(--primary-bg-one);
   .navbar ul li a {
     opacity: 0.7;
@@ -104,7 +103,8 @@
     top: 0;
     left: 0;
     z-index: 200;
-    background-color: var(--menu-bg);
+    background: var(--menu-bg);
+    backdrop-filter: blur(50px);
     height: 100vh;
     min-width: 60%;
     max-width: 60%;

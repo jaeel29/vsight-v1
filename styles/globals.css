@@ -5,7 +5,7 @@
   --primary-two: #25c1f0;
   --primary-three: #182335;
   --text-color: #18233594;
-  --menu-bg: hsl(0, 0%, 94%);
+  --menu-bg: #f5f9ffd9;
   --primary-bg-one: rgba(162, 103, 214, 0.05);
   --primary-bg-two: rgba(37, 193, 240, 0.05);
   --gradient-bg-one: linear-gradient(180deg, #a267d6 0.02%, #fda3ff 234.31%);
@@ -24,7 +24,7 @@
   --primary-one: #a267d6;
   --primary-two: #25c1f0;
   --primary-three: #f5f9ff;
-  --menu-bg: hsl(268, 67%, 10%);
+  --menu-bg: #182335d9;
   --text-color: #ffffff7a;
   --primary-bg-one: rgba(162, 103, 214, 0.05);
   --primary-bg-two: rgba(37, 193, 240, 0.05);
