@@ -3,11 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "./toggle-language.module.scss";
 
-function ToggleLang() {
+function ToggleLang({ showControllers }) {
   const router = useRouter();
 
   return (
-    <div className={classes.lang}>
+    <div
+      className={classes.lang}
+      style={{
+        transform: showControllers ? "translateX(120%)" : "translateX(0)",
+      }}
+    >
       {router.locale === "fr" ? (
         <Link href={router.asPath} locale="en-US">
           <a>

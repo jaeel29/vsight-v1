@@ -6,7 +6,7 @@ import useTranslation from "next-translate/useTranslation";
 import CustomLink from "../../ui/custom-link/custom-link";
 import ToggleLang from "../../ui/toggle-language/toggle-language";
 
-function Footer() {
+function Footer({ showControllers }) {
   const { t } = useTranslation();
   return (
     <footer className={classes.footer}>
@@ -30,7 +30,7 @@ function Footer() {
               </CustomLink>
             ))}
           </ul>
-          <ToggleLang />
+          <ToggleLang showControllers={showControllers} />
         </div>
       </div>
     </footer>

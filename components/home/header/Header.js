@@ -1,5 +1,4 @@
 import { links } from "../../../data/vsight-data";
-import { useState, useEffect } from "react";
 import classes from "./Header.module.scss";
 import CustomLink from "../../ui/custom-link/custom-link";
 import useTranslation from "next-translate/useTranslation";
@@ -7,28 +6,8 @@ import Logo from "./logo/logo";
 import Sphere from "../../icons/accessoirs/sphere";
 import ToggleTheme from "../../ui/toggle-theme/toggle-theme";
 
-function Header() {
-  const [scroll, setScroll] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-
+function Header({ scroll, showMenu, setShowMenu, showControllers }) {
   const { t } = useTranslation();
-
-  //* USEFULL CODE
-  useEffect(() => {
-    if (process.browser) {
-      const fixHeaderAtTop = () => {
-        setShowMenu(false);
-        if (window.scrollY > 70) {
-          setScroll(true);
-        } else {
-          setScroll(false);
-        }
-      };
-
-      window.addEventListener("scroll", fixHeaderAtTop);
-    }
-  }, []);
-
   return (
     <header
       className={
@@ -57,7 +36,12 @@ function Header() {
               ))}
             </ul>
           </div>
-          <div className={classes.themes}>
+          <div
+            className={classes.themes}
+            style={{
+              transform: showControllers ? "translateX(100%)" : "translateX(0)",
+            }}
+          >
             <ToggleTheme />
           </div>
           <div
