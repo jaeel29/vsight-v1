@@ -36,12 +36,7 @@ function Header({ scroll, showMenu, setShowMenu, showControllers }) {
               ))}
             </ul>
           </div>
-          <div
-            className={classes.themes}
-            style={{
-              transform: showControllers ? "translateX(100%)" : "translateX(0)",
-            }}
-          >
+          <div className={`${classes.themes} ${showControllers && "hide"}`}>
             <ToggleTheme />
           </div>
           <div

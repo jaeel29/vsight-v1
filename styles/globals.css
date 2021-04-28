@@ -170,6 +170,34 @@ li {
   text-align: center;
 }
 
+.move-right {
+  animation: move_right 1.4s ease-in-out infinite;
+}
+
+@keyframes move_right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.move-top-down {
+  animation: move_top_down 1.5s ease-in-out infinite;
+}
+
+@keyframes move_top_down {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
 /* This code is for Tablet screen */
 @media screen and (max-width: 769px) {
   .section-title {
@@ -187,5 +215,9 @@ li {
   }
   .text-gradient {
     font-size: 40px;
+  }
+
+  .hide {
+    transform: translateX(100%);
   }
 }

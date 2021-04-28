@@ -7,12 +7,7 @@ function ToggleLang({ showControllers }) {
   const router = useRouter();
 
   return (
-    <div
-      className={classes.lang}
-      style={{
-        transform: showControllers ? "translateX(120%)" : "translateX(0)",
-      }}
-    >
+    <div className={`${classes.lang} ${showControllers && "hide"}`}>
       {router.locale === "fr" ? (
         <Link href={router.asPath} locale="en-US">
           <a>
